@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/yude/auto-spam-executioner:master
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    env_file:
+      - .env
